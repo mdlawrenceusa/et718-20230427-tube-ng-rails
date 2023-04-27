@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Video title:</strong>
+  <%= @video.video_title %>
+</p>
+
+<p>
+  <strong>Video url:</strong>
+  <%= @video.video_url %>
+</p>
+
+<p>
+  <strong>Video description:</strong>
+  <%= @video.video_description %>
+</p>
+
+<p>
+  <strong>Iframe:</strong>
+  <%= @video.iframe %>
+</p>
+
+
+ 	<iframe width="560" height="315" src="<%= @video.video_url %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>
